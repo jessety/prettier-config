@@ -1,0 +1,10 @@
+{{#each releases}}
+  {{#if @first}}
+    {{#if summary}}
+      {{summary}}
+    {{/if}}
+    {{#each commits}}
+      - {{subject}}{{#if href}} [`{{shorthash}}`]({{href}}){{/if}}
+    {{/each}}
+  {{/if}}
+{{/each}}

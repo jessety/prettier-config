@@ -1,0 +1,37 @@
+{
+  "name": "@jessety/prettier-config",
+  "version": "0.0.1",
+  "description": "Prettier config by @jessety",
+  "keywords": [
+    "prettier",
+    "prettierrc",
+    "prettier-config"
+  ],
+  "homepage": "https://github.com/jessety/prettier-config#readme",
+  "bugs": {
+    "url": "https://github.com/jessety/prettier-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessety/prettier-config.git"
+  },
+  "license": "MIT",
+  "author": "Jesse Youngblood",
+  "main": "index.js",
+  "files": [
+    ".prettierrc.json",
+    "index.js"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "test": "jest",
+    "format": "sort-package-json && prettier --write '**/*.{js,json,yml,md}'"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "jest": "^27.1.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "sort-package-json": "^1.50.0"
+  }
+}
