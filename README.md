@@ -26,7 +26,7 @@ Reference this package in the `prettier` section of your `package.json`:
 
 Alternatively, export a string to that references this package from your `prettier` config file.
 
-For example, a valid `.prettier.json` file would be:
+For example, a valid `.prettierrc.json` file would be:
 
 ```json
 "@jessety/prettier-config"
