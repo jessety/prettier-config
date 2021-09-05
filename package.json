@@ -25,9 +25,11 @@
   "scripts": {
     "prepare": "husky install",
     "test": "jest",
-    "format": "sort-package-json && prettier --write '**/*.{js,json,yml,md}'"
+    "format": "sort-package-json && prettier --write '**/*.{js,json,yml,md}' && eslint --fix ."
   },
   "devDependencies": {
+    "@jessety/eslint-config": "^2.2.2",
+    "eslint": "^7.32.0",
     "husky": "^7.0.0",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
