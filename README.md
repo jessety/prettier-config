@@ -39,7 +39,7 @@ To extend this config file in your project, use a `.prettierrc.js` file:
 ```javascript
 module.exports = {
   ...require('@jessety/prettier-config'),
-  printWidth: 100
+  printWidth: 100,
 };
 ```
 

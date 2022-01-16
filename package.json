@@ -23,17 +23,17 @@
     "index.js"
   ],
   "scripts": {
+    "format": "sort-package-json && eslint --fix . && prettier --write '**/*.{js,json,yml,md}'",
     "prepare": "husky install",
-    "test": "jest",
-    "format": "sort-package-json && prettier --write '**/*.{js,json,yml,md}' && eslint --fix ."
+    "test": "jest"
   },
   "devDependencies": {
     "@jessety/eslint-config": "^2.2.2",
-    "eslint": "^7.32.0",
+    "eslint": "^8.7.0",
     "husky": "^7.0.0",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
-    "sort-package-json": "^1.50.0"
+    "prettier": "^2.5.1",
+    "sort-package-json": "^1.53.1"
   }
 }
